@@ -5,6 +5,6 @@ import { healthCheck } from './healthCheck.middleware';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.use(healthCheck);
-  await app.listen(3009);
+  await app.listen(3000);
 }
 bootstrap();
